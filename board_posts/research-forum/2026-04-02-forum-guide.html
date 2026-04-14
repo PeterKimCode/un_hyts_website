@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연구자 포럼 자료 등록 안내 | 총회신학학술연구원</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="../../assets/images/site-logo.png">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header class="top-nav">
+        <div class="container top-nav-inner flex-between">
+            <a class="logo-area" href="../../index.html">
+                <img src="../../assets/images/site-logo.png" alt="학교 로고" class="main-logo-image">
+                <div class="logo-text">
+                    <h1>총회신학학술연구원</h1>
+                    <span>대한예수교장로회(한영)총회신학학술연구원</span>
+                </div>
+            </a>
+            <div class="top-links-area">
+                <nav class="top-links">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../sitemap.html">사이트맵</a>
+                    <span class="lang-selector">ENG</span>
+                </nav>
+                <div class="search-wrap">
+                    <input type="text" placeholder="검색어를 입력하세요">
+                    <button type="button" aria-label="검색">
+                        <i class="ph-light ph-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-category-nav">
+        <div class="container nav-icons-wrap">
+            <details class="nav-item nav-dropdown">
+                <summary class="nav-icon-link nav-dropdown-toggle">
+                    <div class="icon-box"><i class="ph-light ph-bank"></i></div>
+                    <span>학교소개</span>
+                </summary>
+                <div class="nav-dropdown-menu">
+                    <a href="../../intro_greeting.html">장 인사말</a>
+                    <a href="../../intro_ideology.html">교육이념</a>
+                    <a href="../../intro_history.html">연혁</a>
+                    <a href="../../intro_org.html">조직도</a>
+                    <a href="../../intro_faculty.html">교수 소개</a>
+                    <a href="intro_school.html">인준신학교</a>
+                </div>
+            </details>
+            <a href="../../admissions_guideline.html" class="nav-icon-link"><div class="icon-box"><i class="ph-light ph-graduation-cap"></i></div><span>입학안내</span></a>
+            <a href="../../degree_bachelor.html" class="nav-icon-link"><div class="icon-box"><i class="ph-light ph-student"></i></div><span>학위과정</span></a>
+            <a href="../../academic_info.html" class="nav-icon-link"><div class="icon-box"><i class="ph-light ph-calendar-blank"></i></div><span>학사안내</span></a>
+            <a href="../../campus_life.html" class="nav-icon-link"><div class="icon-box"><i class="ph-light ph-users"></i></div><span>대학생활</span></a>
+            <a href="../../campus_life.html" class="nav-icon-link"><div class="icon-box"><i class="ph-light ph-users"></i></div><span>대학생활</span></a>
+            <a href="../../research_intro.html" class="nav-icon-link"><div class="icon-box"><i class="ph-light ph-microscope"></i></div><span>학술연구</span></a>
+            <a href="../../online_service.html" class="nav-icon-link"><div class="icon-box"><i class="ph-light ph-desktop"></i></div><span>온라인서비스</span></a>
+        </div>
+    </nav>
+
+
+<style>
+    /* 전체 컨테이너 설정 */
+    .forum-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+    }
+
+    /* 상단 안내 영역 스타일 */
+    .board-back-link {
+        display: inline-block;
+        text-decoration: none;
+        color: #666;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    
+    .board-article {
+        background-color: #fff;
+        border: 1px solid #e9ecef;
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 40px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .board-article-meta {
+        color: #888;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .board-article h3 {
+        margin-top: 0;
+        color: #007bff;
+        font-size: 22px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 15px;
+    }
+
+    .board-article-content {
+        line-height: 1.6;
+        color: #444;
+    }
+
+    .board-article-content ul {
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    /* 하단 교과목 리스트 스타일 */
+    .subject-header {
+        border-bottom: 2px solid #333;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .subject-header h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .subject-header p {
+        color: #666;
+        margin: 0;
+    }
+
+    .subject-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 15px;
+    }
+
+    .subject-list li {
+        flex: 0 1 calc(33.333% - 10px);
+        box-sizing: border-box;
+    }
+
+    .subject-link {
+        display: block;
+        padding: 15px;
+        background-color: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-left: 4px solid #007bff;
+        text-decoration: none;
+        color: #333 !important;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        text-align: center;
+    }
+
+    .subject-link:hover {
+        background-color: #007bff;
+        color: #fff !important;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* 모바일 대응 */
+    @media (max-width: 768px) {
+        .subject-list li {
+            flex: 0 1 100%;
+        }
+    }
+</style>
+
+<div class="forum-container">
+    <a href="../../board_research_forum.html" class="board-back-link">
+        <i class="ph-light ph-arrow-left"></i> 게시판으로 돌아가기
+    </a>
+    
+    <article class="board-article">
+        <h3>연구자 논문 & 포럼 자료 등록 안내</h3>
+        <div class="board-article-content">
+            <p>연구자 논문&포럼은 교수진과 연구자들이 학술 자료를 공유하는 공간입니다.</p>
+            <ul>
+                <li>발표 자료는 PDF 기준으로 준비해 주세요.</li>
+                <li>논문 초안은 제목, 작성자, 요약을 함께 <a href="mailto:yjisc@naver.com" style="color: blue; text-decoration: underline;">yjisc@naver.com</a> 으로 제출해 주세요.</li>
+                <li>자료 검토 후 게시판에 반영됩니다.</li>
+            </ul>
+        </div>
+    </article>
+
+    <section class="subject-section">
+        <div class="subject-header">
+            <h1>논문&포럼</h1>
+            <p>항목을 클릭하면 해당 자료를 다운로드하실 수 있습니다.</p>
+        </div>
+
+        <ul class="subject-list">
+            <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/cUeCdUcrE" target="_blank" class="subject-link">김낙신박사 논문</a></li>
+            <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/dtvnCySh2" target="_blank" class="subject-link">이광재박사 논문</a></li>
+            <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/M7z4bH6jr" target="_blank" class="subject-link">우상용박사 논문</a></li>
+            <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/589sC8V4M" target="_blank" class="subject-link">우상용박사 포럼</a></li>
+            <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/XmUfF2Yqo" target="_blank" class="subject-link">우상용박사 포럼</a></li>
+            <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/BHtK6Dop1" target="_blank" class="subject-link">우상용박사 포럼</a></li>
+        </ul>
+    </section>
+</div>
+
+    </main>
+    <footer class="modern-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="f-col">
+                    <h6>OUR CAMPUS</h6>
+                    <h3 class="f-brand">총회신학학술연구원</h3>
+                    <p>대한예수교장로회(한영)<br>총회신학학술연구원</p>
+                    <p><strong>Phone:</strong> (031) 677-8428</p>
+                    <p><strong>Email:</strong> admin@hyts.ac.kr</p>
+                </div>
+                <div class="f-col f-links">
+                    <h6>QUICK LINKS</h6>
+                    <ul>
+                        <li><a href="http://www.hypck.org/">한영총회 <i class="ph-light ph-arrow-right"></i></a></li>
+                        <li><a href="http://gtcc.edu.ph/">GTCC대학교 <i class="ph-light ph-arrow-right"></i></a></li>
+                        <li><a href="https://myyoungji.com/">영지국제학교 <i class="ph-light ph-arrow-right"></i></a></li>
+                        <li><a href="../../online_service.html">온라인서비스 <i class="ph-light ph-arrow-right"></i></a></li>
+                        <li><a href="../../campus_life.html">대학생활 <i class="ph-light ph-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="f-col f-connect">
+                    <h6>CONNECT</h6>
+                    <p>개혁주의 신학의 토대 위에 교회와 세계를 섬기는 목회자와 지도자를 세우는 신학 공동체입니다.</p>
+                    <a href="../../admissions_guideline.html" class="btn-primary">입학 안내 확인하기</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 대한예수교장로회(한영)총회신학학술연구원. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

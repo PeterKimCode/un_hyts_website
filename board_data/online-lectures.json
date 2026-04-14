@@ -1,0 +1,15 @@
+{
+  "id": "online-lectures",
+  "title": "교과목 다운로드",
+  "description": "각 학과의 교과목을 다운로드하실수 있습니다",
+  "page": "board_online_lectures.html",
+  "posts": [
+    {
+      "title": "교과목 다운로드",
+      "date": "2026-04-02",
+      "summary": "비대면 수업 접속 방법과 기본 이용 수칙을 안내합니다.",
+      "slug": "2026-04-02-online-class-guide",
+      "url": "board_posts/online-lectures/2026-04-02-online-class-guide.html"
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학술연구 - 기관소개 | 총회신학학술연구원</title>
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="assets/images/site-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="top-nav">
+        <div class="container top-nav-inner flex-between">
+            <a class="logo-area" href="index.html">
+                <img src="assets/images/site-logo.png" alt="학교 로고" class="main-logo-image">
+                <div class="logo-text">
+                    <h1>총회신학학술연구원</h1>
+                    <span>대한예수교장로회(한영)총회신학학술연구원</span>
+                </div>
+            </a>
+            <div class="top-links-area">
+                <nav class="top-links">
+                    <a href="index.html">Home</a>
+                    <a href="sitemap.html">사이트맵</a>
+                    <button type="button" class="lang-selector" data-lang-toggle aria-label="영어 번역 전환">ENG</button>
+                </nav>
+                <div class="search-wrap">
+                    <input type="text" placeholder="검색어를 입력하세요">
+                    <button type="button" aria-label="검색">
+                        <i class="ph-light ph-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="google_translate_element" class="translate-widget" aria-hidden="true"></div>
+    </header>
+
+    <nav class="main-category-nav">
+        <div class="container nav-icons-wrap">
+            <details class="nav-item nav-dropdown">
+                <summary class="nav-icon-link nav-dropdown-toggle">
+                    <div class="icon-box"><i class="ph-light ph-bank"></i></div>
+                    <span>학교소개</span>
+                </summary>
+                <div class="nav-dropdown-menu">
+                    <a href="intro_chairman.html">이사장 인사말</a>
+                    <a href="intro_greeting.html">학장 인사말</a>
+                    <a href="intro_ideology.html">교육이념</a>
+                    <a href="intro_history.html">연혁</a>
+                    <a href="intro_org.html">조직도</a>
+                    <a href="intro_faculty.html">교수 소개</a>
+                    <a href="intro_school.html">인준신학교</a>
+                </div>
+            </details>
+            <a href="admissions_guideline.html" class="nav-icon-link">
+                <div class="icon-box"><i class="ph-light ph-graduation-cap"></i></div>
+                <span>입학안내</span>
+            </a>
+            <a href="degree_bachelor.html" class="nav-icon-link">
+                <div class="icon-box"><i class="ph-light ph-student"></i></div>
+                <span>학위과정</span>
+            </a>
+            <a href="academic_info.html" class="nav-icon-link">
+                <div class="icon-box"><i class="ph-light ph-calendar-blank"></i></div>
+                <span>학사안내</span>
+            </a>
+            <a href="campus_life.html" class="nav-icon-link">
+                <div class="icon-box"><i class="ph-light ph-users"></i></div>
+                <span>대학생활</span>
+            </a>
+            <a href="research_intro.html" class="nav-icon-link">
+                <div class="icon-box"><i class="ph-light ph-microscope"></i></div>
+                <span>학술연구</span>
+            </a>
+            <a href="online_service.html" class="nav-icon-link">
+                <div class="icon-box"><i class="ph-light ph-desktop"></i></div>
+                <span>온라인서비스</span>
+            </a>
+        </div>
+    </nav>
+
+
+<style>
+    /* 전체 컨테이너 및 배경 */
+    .page-content-area {
+        background-color: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .content-body {
+        padding: 40px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    /* 섹션 제목 스타일 */
+    .section-title {
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #0056b3;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #e9ecef;
+    }
+
+    .section-title i {
+        margin-right: 10px;
+        font-size: 1.6rem;
+    }
+
+    /* 상단 요약 박스 */
+    .intro-box {
+        background-color: #f8f9fa;
+        border-left: 5px solid #0056b3;
+        padding: 25px;
+        border-radius: 4px;
+        margin-bottom: 35px;
+    }
+
+    .intro-box p {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    /* 연구 분야 리스트 (Grid 적용) */
+    .research-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 15px;
+        margin-bottom: 35px;
+    }
+
+    .research-item {
+        background: #ffffff;
+        border: 1px solid #dee2e6;
+        padding: 20px;
+        border-radius: 8px;
+        transition: transform 0.2s;
+    }
+
+    .research-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .research-item strong {
+        display: block;
+        color: #0056b3;
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+
+    /* 주요 사역 표 스타일 */
+    .activity-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        margin-bottom: 35px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 1px rgba(0,0,0,0.2);
+    }
+
+    .activity-table th {
+        background-color: #f1f3f5;
+        padding: 15px;
+        text-align: center;
+        font-weight: 600;
+        border: 1px solid #dee2e6;
+        width: 25%;
+    }
+
+    .activity-table td {
+        padding: 15px;
+        border: 1px solid #dee2e6;
+        vertical-align: middle;
+    }
+
+    .activity-table tr:nth-child(even) {
+        background-color: #fafafa;
+    }
+
+    /* 하단 맺음말 */
+    .footer-quote {
+        text-align: center;
+        background-color: #e7f1ff;
+        padding: 30px;
+        border-radius: 10px;
+        font-weight: 500;
+        color: #004085;
+    }
+
+    /* 모바일 대응 */
+    @media (max-width: 768px) {
+        .content-body { padding: 20px; }
+        .activity-table th, .activity-table td { padding: 10px; font-size: 0.9rem; }
+    }
+</style>
+
+<main class="fade-in">
+    <div class="page-header">
+        <h2>학술연구 - 기관소개</h2>
+    </div>
+
+    <div class="container page-content-area shadow-sm">
+        <div class="content-body">
+            
+            <section class="intro-box">
+                <h3 class="section-title"><i class="ph-bold ph-bank"></i> 기관 개요 및 목적</h3>
+                <p>대한예수교장로회(한영) 총회신학학술연구원은 교단의 신학적 정체성을 공고히 하고, 시대적 사명에 응답하는 학문적 토대를 마련하기 위해 설립된 전문 연구 기관입니다.</p>
+                <p>개혁주의 신학을 바탕으로 성경의 권위를 높이고, 급변하는 현대 사회 속에서 교회가 나아갈 방향을 학술적으로 제시하는 **'학문과 실천의 가교'**이자 **신학적 성숙을 견인하는 허브(Hub)**를 지향합니다.</p>
+            </section>
+
+            <h3 class="section-title"><i class="ph-bold ph-book-open"></i> 주요 연구 분야</h3>
+            <p style="margin-bottom: 20px;">5대 핵심 신학 파트를 중심으로 심도 있는 연구를 진행합니다.</p>
+            
+            <div class="research-grid">
+                <div class="research-item">
+                    <strong>조직신학 (Systematic Theology)</strong>
+                    기독교 신앙의 체계적 정립 및 현대 사조에 대한 신학적 응답
+                </div>
+                <div class="research-item">
+                    <strong>성서신학 (Biblical Theology)</strong>
+                    신·구약 성경의 원어 해석 및 성경적 원리에 기초한 주해 연구
+                </div>
+                <div class="research-item">
+                    <strong>역사신학 (Historical Theology)</strong>
+                    교회사적 발자취를 통한 교훈 도출 및 개혁주의 전통의 계승
+                </div>
+                <div class="research-item">
+                    <strong>실천신학 (Practical Theology)</strong>
+                    예배, 설교, 상담, 교육 등 목회 현장에 즉각 적용 가능한 이론 연구
+                </div>
+                <div class="research-item">
+                    <strong>선교신학 (Missiology)</strong>
+                    세계 선교 전략 수립 및 다양한 문화적 맥락 속 복음 전파 연구
+                </div>
+            </div>
+
+            <h3 class="section-title"><i class="ph-bold ph-calendar-check"></i> 주요 사역 및 활동</h3>
+            <table class="activity-table">
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>주요 내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>학술행사</th>
+                        <td>정기 학술대회 개최, 주제별 포럼 및 전문가 초청 세미나 운영</td>
+                    </tr>
+                    <tr>
+                        <th>발간사업</th>
+                        <td>전문 학술지 발행, 연구 논문집 및 신학 연구 자료집 발간</td>
+                    </tr>
+                    <tr>
+                        <th>네트워크</th>
+                        <td>총회 소속 석학 및 목회자 간의 연구 커뮤니티 활성화</td>
+                    </tr>
+                    <tr>
+                        <th>교육지원</th>
+                        <td>연구 성과의 목회 현장 보급 및 신학적 자문 수행</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="footer-quote">
+                "단순한 이론 연구에 그치지 않고, 하나님 나라의 확장과 교회의 갱신을 위해 헌신합니다.<br>
+                모든 목회자와 연구자들이 신학적 통찰을 공유하며 함께 성장하는 거룩한 학문의 장이 되겠습니다."
+            </div>
+
+        </div>
+    </div>
+</main>
+
+    <footer class="modern-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="f-col">
+                    <h6>OUR CAMPUS</h6>
+                    <h3 class="f-brand">총회신학학술연구원</h3>
+                    <p>대한예수교장로회(한영)<br>총회신학학술연구원</p>
+                    <p><strong>Phone:</strong> (031) 677-8428</p>
+                    <p><strong>Email:</strong> admin@hyts.ac.kr</p>
+                </div>
+                <div class="f-col f-links">
+                    <h6>QUICK LINKS</h6>
+                    <ul>
+                       <li><a href="http://www.hypck.org/">한영총회 <i class="ph-light ph-arrow-right"></i></a></li>
+                        <li><a href="http://gtcc.edu.ph/">GTCC대학교 <i class="ph-light ph-arrow-right"></i></a></li>
+                        <li><a href="https://myyoungji.com/">영지국제학교 <i class="ph-light ph-arrow-right"></i></a></li>
+                        <li><a href="http://www.hypck.org/">임마누엘신학교 <i class="ph-light ph-arrow-right"></i></a></li>
+                        <li><a href="http://www.hypck.org/">유니온신학교 <i class="ph-light ph-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="f-col f-connect">
+                    <h6>CONNECT</h6>
+                    <p>개혁주의 신학의 토대 위에 교회와 세계를 섬기는 목회자와 지도자를 세우는 신학 공동체입니다.</p>
+                    <a href="admissions_guideline.html" class="btn-primary">입학 안내 확인하기</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 대한예수교장로회(한영)총회신학학술연구원. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/site.js"></script>
+</body>
+
+</html>

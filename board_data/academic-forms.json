@@ -1,0 +1,15 @@
+{
+  "id": "academic-forms",
+  "title": "각종 서식",
+  "description": "학사 관련 신청서와 행정 서식을 내려받을 수 있는 게시판",
+  "page": "academic_forms.html",
+  "posts": [
+    {
+      "title": "휴학원 서식 안내",
+      "date": "2026-04-02",
+      "summary": "휴학 신청 시 제출해야 하는 기본 서류와 작성 유의사항을 안내합니다.",
+      "slug": "2026-04-02-academic-leave-form",
+      "url": "board_posts/academic-forms/2026-04-02-academic-leave-form.html"
+    }
+  ]
+}

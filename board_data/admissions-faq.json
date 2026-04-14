@@ -1,0 +1,22 @@
+{
+  "id": "admissions-faq",
+  "title": "입학FAQ",
+  "description": "입학 관련 자주 묻는 질문을 모아둔 게시판",
+  "page": "admissions_faq.html",
+  "posts": [
+    {
+      "title": "제출서류에는 어떤 것이 있나요?",
+      "date": "2026-04-02",
+      "summary": "과정별 기본 제출서류와 박사과정 추가 서류를 안내합니다.",
+      "slug": "2026-04-02-faq-docs",
+      "url": "board_posts/admissions-faq/2026-04-02-faq-docs.html"
+    },
+    {
+      "title": "원서 접수는 언제 가능한가요?",
+      "date": "2026-04-02",
+      "summary": "본 연구원의 입학 전형은 연중 수시모집으로 운영됩니다.",
+      "slug": "2026-04-02-faq-rolling",
+      "url": "board_posts/admissions-faq/2026-04-02-faq-rolling.html"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "student-portal",
+  "title": "동영상 강의 다운로드",
+  "description": "교수님의 교과목 동영상 강의를 다운로드하실수 있습니다.",
+  "page": "board_student_portal.html",
+  "posts": [
+    {
+      "title": "교수님 교과목 동영상 강의 다운로드",
+      "date": "2026-04-02",
+      "summary": "동영상 강의 다운로드 및 시청을 하실수 있습니다.",
+      "slug": "2026-04-02-portal-guide",
+      "url": "board_posts/student-portal/2026-04-02-portal-guide.html"
+    }
+  ]
+}

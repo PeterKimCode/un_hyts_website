@@ -1,0 +1,15 @@
+{
+  "id": "school-events",
+  "title": "학교행사",
+  "description": "학교의 주요 집회, 행사, 특별 프로그램 소식을 안내하는 게시판",
+  "page": "school_events.html",
+  "posts": [
+    {
+      "title": "2026 봄 영성수련회 안내",
+      "date": "2026-04-02",
+      "summary": "1학기 영성수련회 일정과 준비 사항을 안내합니다.",
+      "slug": "2026-04-02-spring-spiritual-retreat",
+      "url": "board_posts/school-events/2026-04-02-spring-spiritual-retreat.html"
+    }
+  ]
+}

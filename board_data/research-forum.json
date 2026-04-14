@@ -1,0 +1,15 @@
+{
+  "id": "research-forum",
+  "title": "연구자 논문&포럼",
+  "description": "연구 자료, 포럼 일정, 논문 안내 게시판",
+  "page": "board_research_forum.html",
+  "posts": [
+    {
+      "title": "연구자 논문&포럼 자료 등록 안내",
+      "date": "2026-04-02",
+      "summary": "연구자 논문&포럼에서 발표 자료와 논문 초안을 공유하는 절차를 안내합니다.",
+      "slug": "2026-04-02-forum-guide",
+      "url": "board_posts/research-forum/2026-04-02-forum-guide.html"
+    }
+  ]
+}
